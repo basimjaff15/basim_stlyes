@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basim Styles | Modern Ethnic Elegance</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light Sea Blue */
+            color: #004d40; /* Dark Sea Green */
+        }
+        header {
+            background-color: #00796b; /* Sea Green */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .nav-bar {
+            text-align: center;
+            background-color: #004d40; /* Dark Sea Green */
+        }
+        .nav-bar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .nav-bar a:hover {
+            background-color: #80cbc4; /* Light Sea Green */
+            color: black;
+        }
+        .main-banner {
+            background-image: url('https://via.placeholder.com/1500x600/80cbc4/004d40?text=Basim+Styles');
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 100px;
+            position: relative;
+        }
+        .main-banner h1 {
+            font-size: 3.5em;
+        }
+        .main-banner p {
+            font-size: 1.5em;
+        }
+        .sold-notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #00796b; /* Sea Green */
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeOut 5s forwards;
+        }
+        .sold-notification::before {
+            content: "🔥";
+            margin-right: 8px;
+        }
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background-color: #b2dfdb; /* Light Sea Green */
+            padding: 20px;
+            width: 30%;
+            margin: 10px 0;
+            border: 1px solid #004d40;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product-card h3 {
+            margin-top: 10px;
+            font-size: 1.3em;
+        }
+        .product-card p {
+            font-size: 1em;
+            color: #004d40;
+        }
+        .payment-method {
+            background-color: #004d40; /* Dark Sea Green */
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 8px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .payment-method h3 {
+            font-size: 1.5em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #00796b; /* Sea Green */
+            color: white;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        }
+        footer a {
+            color: #b2dfdb; /* Light Sea Green */
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Basim Styles</h1>
+    <p>Modern Ethnic Elegance</p>
+</header>
+
+<div class="nav-bar">
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Collections</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</div>
+
+<div class="main-banner">
+    <h1>Welcome to Basim Styles</h1>
+    <p>Discover modern elegance with a traditional touch.</p>
+</div>
+
+<!-- Sold Notification in Corner -->
+<div class="sold-notification">
+    <p>2 items sold an hour ago!</p>
+</div>
+
+<section class="products">
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x300?text=Product+1" alt="Traditional Saree">
+        <h3>Traditional Saree</h3>
+        <p>Elegant designs that capture the essence of tradition.</p>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x300?text=Product+2" alt="Chic Kurtis">
+        <h3>Chic Kurtis</h3>
+        <p>Modern fits with classic patterns for every occasion.</p>
+    </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x300?text=Product+3" alt="Designer Lehengas">
+        <h3>Designer Lehengas</h3>
+        <p>Perfect for weddings and festivals, crafted with care.</p>
+    </div>
+</section>
+
+<div class="payment-method">
+    <h3>Pay via Easypaisa</h3>
+    <p>For payments, please send to: <strong>+92 3352295214</strong></p>
+    <p>Or scan the QR below to pay directly!</p>
+    <img src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=Payment+Link&choe=UTF-8" alt="Easypaisa QR">
+</div>
+
+<footer>
+    <p>&copy; 2024 Basim Styles. All Rights Reserved.</p>
+    <p><a href="mailto:contact@basimstyles.com">Contact Us</a></p>
+</footer>
+
+</body>
+</html>
